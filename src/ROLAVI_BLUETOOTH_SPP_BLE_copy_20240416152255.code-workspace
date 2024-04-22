@@ -17,7 +17,9 @@
 		"stm32-for-vscode.makePath": false,
 		"stm32-for-vscode.armToolchainPath": false,
 		"files.associations": {
-			"esp_system.h": "c"
+			"esp_system.h": "c",
+			"esp_mac.h": "c",
+			"esp_gatts_api.h": "c"
 		}
 	}
 }
