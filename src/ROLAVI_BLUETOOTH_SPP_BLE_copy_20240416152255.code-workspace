@@ -1,25 +1,15 @@
 {
-	"folders": [
-		{
-			"path": "../../../../../Downloads/ROLAVI_BLUETOOTH_SPP_BLE_copy_20240416152255"
-		},
-		{
-			"name": "240418-135234-esp32dev",
-			"path": "../../240418-135234-esp32dev"
-		},
-		{
-			"name": "zigBle",
-			"path": ".."
-		}
-	],
-	"settings": {
-		"stm32-for-vscode.openOCDPath": false,
-		"stm32-for-vscode.makePath": false,
-		"stm32-for-vscode.armToolchainPath": false,
-		"files.associations": {
-			"esp_system.h": "c",
-			"esp_mac.h": "c",
-			"esp_gatts_api.h": "c"
-		}
-	}
+    "folders": [
+        {
+            "path": ".."
+        }
+    ],
+    "settings": {
+        "stm32-for-vscode.openOCDPath": false,
+        "stm32-for-vscode.makePath": false,
+        "stm32-for-vscode.armToolchainPath": false,
+        "files.associations": {
+            "esp_gatt_common_api.h": "c"
+        }
+    }
 }
