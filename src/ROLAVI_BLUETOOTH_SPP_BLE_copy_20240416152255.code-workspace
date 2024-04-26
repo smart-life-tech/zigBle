@@ -2,6 +2,10 @@
     "folders": [
         {
             "path": ".."
+        },
+        {
+            "name": "ble",
+            "path": "../../ble"
         }
     ],
     "settings": {
@@ -9,7 +13,9 @@
         "stm32-for-vscode.makePath": false,
         "stm32-for-vscode.armToolchainPath": false,
         "files.associations": {
-            "esp_gatt_common_api.h": "c"
+            "esp_gatt_common_api.h": "c",
+            "esp_log.h": "c",
+            "sdkconfig.h": "c"
         }
     }
 }

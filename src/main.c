@@ -5,14 +5,14 @@
 #include "esp_event.h"
 #include "nvs_flash.h"
 #include "esp_log.h"
-
+#include "esp_nimble_hci.h"
 #include "nimble/nimble_port.h"
 #include "nimble/nimble_port_freertos.h"
 #include "host/ble_hs.h"
 #include "services/gap/ble_svc_gap.h"
 #include "services/gatt/ble_svc_gatt.h"
 #include "sdkconfig.h"
-#include "esp_nimble_hci.h"
+
 char *TAG = "BLE-Server";
 uint8_t ble_addr_type;
 void ble_app_advertise(void);
@@ -134,7 +134,7 @@ void host_task(void *param)
 void app_main()
 {
     nvs_flash_init();                          // 1 - Initialize NVS flash using
-    // esp_nimble_hci_and_controller_init();      // 2 - Initialize ESP controller
+    //esp_nimble_hci_and_controller_init();      // 2 - Initialize ESP controller
     nimble_port_init();                        // 3 - Initialize the host stack
     ble_svc_gap_device_name_set("BLE-Server"); // 4 - Initialize NimBLE configuration - server name
     ble_svc_gap_init();                        // 4 - Initialize NimBLE configuration - gap service
